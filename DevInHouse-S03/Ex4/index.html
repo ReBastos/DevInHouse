@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        span{
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Calculadora de Desconto</h2>
+        <input type="number" placeholder="Valor da Compra" id="inputValor">
+        <input type="number" placeholder="Desconto" id="inputDesconto">
+        <button onclick="calcular()">Calcular</button>
+        <span id="valorCompra"></span>
+        <span id="valorDeDesconto"></span>
+        <span id="valorComDesconto"></span>
+    </main>
+
+    <script>
+
+      function calcular(){
+            var valor = parseFloat(document.getElementById("inputValor").value);
+            var desconto = document.getElementById("inputDesconto").value;
+            var total = valor - ((valor * desconto) / 100);
+
+            document.getElementById("valorCompra").textContent = "Valor da Compra: R$"+ valor.toFixed(2); 
+            document.getElementById("valorDeDesconto").textContent = "Desconto: R$"+ ((valor * desconto) / 100).toFixed(2);
+            document.getElementById("valorComDesconto").textContent = "Total: R$" + total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

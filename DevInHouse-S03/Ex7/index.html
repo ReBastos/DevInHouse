@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgrey;
+        }
+        img{
+            width: 150px;
+            border-radius: 100px;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+        #more, #less{
+            visibility: collapse;
+        }
+
+        p{
+            position: absolute;
+            
+        }
+    </style>
+</head>
+<body>  
+    <p>Status: <span id="status"></span></p>
+    <img src="lampada.png" id="lampada"><br>
+    <div><button id="more" onclick="more()">+</button> <button id="less" onclick="less()"> - </button></div><button onclick="ligaDesliga()" id="switch">Liga/Desliga</button>
+    
+    <script>
+        var statusLampada = false;
+        var texto ="";
+
+        document.addEventListener("DOMContentLoaded", ligaDesliga);
+
+        var luz = 0;
+
+        function more(){
+            luz = luz + 10;
+            document.getElementById("lampada").style.boxShadow = "0px 0px 140px "+luz+"px yellow";
+        }
+
+        function less(){
+            luz = luz - 10;
+            document.getElementById("lampada").style.boxShadow = "0px 0px 140px "+luz+"px yellow"
+        }
+        function ligaDesliga(){
+
+            statusLampada =  !statusLampada;
+        
+        if(statusLampada){
+            texto ="Luz Acesa!";
+            document.getElementById("lampada").style.backgroundColor = "yellow";
+            document.getElementById("lampada").style.boxShadow = "0px 0px 140px "+luz+"px yellow"
+            document.getElementById("switch").style.border = "inset";
+            document.getElementById("more").style.visibility = "visible";
+            document.getElementById("less").style.visibility = "visible";
+            
+        } else {
+            texto = "Luz Apagada!"
+            document.getElementById("lampada").style.backgroundColor = "lightgrey";
+            document.getElementById("lampada").style.boxShadow = "0px 0px 0px lightgrey"
+            document.getElementById("switch").style.border = "outset";
+            document.getElementById("more").style.visibility = "collapse";
+            document.getElementById("less").style.visibility = "collapse";
+            
+        }
+        document.getElementById("status").innerHTML = texto;
+    }
+    
+    
+
+    localStorage.setItem("status", statusLampada);
+    </script>
+</body>
+</html>
