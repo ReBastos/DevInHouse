@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuário</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+
+        main{
+            background-color: none;
+            width: 500px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        #form{
+            height: inherit;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        #form > p{
+            width: 100%;
+            text-align: left;
+        }
+
+        #form > input{
+            width: 100%;
+            border: none;
+            background-color: lightsalmon;
+        }
+
+        #form > h1{
+            text-align: center;
+        }
+
+        button{
+            width: 100%;
+            border: none;
+            color: orangered;
+            background-color: black;
+        }
+
+        #user{
+            width: 50%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        #user > img{
+            height: 200px;
+            width: 75px;
+        }
+
+        #user > p{
+            word-break: break-all;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <main>
+        <div id="form">
+            <h1>Cadastro de Usuário</h1>
+            <p>Nome:</p>
+            <input id="nome" type="text">
+            <p>Imagem:</p>
+            <input id="imagem" type="text">
+            <p>Descrição:</p>
+            <input id="descricao" type="text">
+            <br>
+            <button id="submit">Criar Usuário</button>
+        </div>
+        <div id="user">
+            <img id="perfilCard">
+            <h3 id="nomeCard"></h3>
+            <p id="descricaoCard"></p>
+        </div>
+    </main>
+    <script defer type="module" src="index.js"></script>
+</body>
+</html>
