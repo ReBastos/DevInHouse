@@ -1,0 +1,3 @@
+# Ecmascript vs. Javascript
+
+## Ecmascript
