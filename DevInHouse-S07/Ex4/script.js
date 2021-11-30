@@ -15,5 +15,7 @@ const ativo = lista.map(function(cliente){
     }
 });
 
-console.log(ativo);
+const over25 = ativo.filter(valor => valor.idade > 25);
+
+console.log(over25);
 
