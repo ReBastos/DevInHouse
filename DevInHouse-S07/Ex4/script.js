@@ -6,16 +6,13 @@ const lista = [
 	{ 'id': 5, 'cliente': 'Claudia Cipriano', 'idade': 22 }
 ]
 
-const ativo = lista.map(function(cliente){
-    return {
-        id: cliente.id,
-        cliente: cliente.cliente,
-        idade: cliente.idade,
-        ativo: true
-    }
+
+const ativo = lista.map((cliente) =>{ 
+    cliente.ativo = true;
+    return cliente;
 });
 
-const over25 = ativo.filter(valor => valor.idade > 25);
+const over25 = lista.filter(valor => valor.idade > 25);
 
 console.log(over25);
 
