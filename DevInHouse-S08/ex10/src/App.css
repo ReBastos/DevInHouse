@@ -5,29 +5,6 @@
   font-weight: bold;
 }
 
-.pokemonImage {
-  width: 100px;
-  height: 100px;
-
-  border-radius: 50%;
-  border: 1px solid #cccc;
-
-}
-
-.pokemon {
-  width: 150px;
-  height: 250px;
-
-  background: #48D0B0;
-
-  border: 1px solid #48D0B0;;
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 
 
 
