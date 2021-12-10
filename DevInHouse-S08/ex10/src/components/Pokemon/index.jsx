@@ -1,3 +1,5 @@
+import { handleGenerateBg } from "../../utils";
+
 const Pokemon = ({
   photo, 
   name,
@@ -7,9 +9,11 @@ const Pokemon = ({
   types
 }) => {
 
+  const typeColor = handleGenerateBg(types[0]);
+  
     return(
     <>
-    <div className='pokemon' /* style={{background: typeColor}} */>
+    <div className='pokemon' style={{background: typeColor}}>
       <img className='pokemonImage' src={photo} alt={name}></img>
 
       <h2>{name}</h2>
