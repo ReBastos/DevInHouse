@@ -1,0 +1,28 @@
+.contact {
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#nome{
+    font-weight: bold;
+}
+
+#descricao{
+    color: rgb(165, 164, 164);
+}
+
+p{
+    margin: 0;
+}
+
