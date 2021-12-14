@@ -1,7 +1,10 @@
 
 import './App.css';
+import {useState} from 'react'
 
 function App() {
+
+  const [aceso, setAceso] = useState(true)
   return (
     <div
       style={{
@@ -13,7 +16,9 @@ function App() {
         backgroundColor: aceso ? "#ffee00" : "#000",
       }}
     >
-      <button onClick={}>Mudar</button>
+      <button onClick={() => {
+        aceso ? setAceso(false) : setAceso(true)
+      }}>Mudar</button>
     </div>
   );
 }
