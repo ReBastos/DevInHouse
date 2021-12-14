@@ -1,24 +1,27 @@
-
-import './App.css';
-import {useState} from 'react'
+import "./App.css";
+import { useState } from "react";
+import Lampada from "./components/lampada";
 
 function App() {
-
-  const [aceso, setAceso] = useState(true)
+  const [aceso, setAceso] = useState(0);
+  const [nameButton, setNameButton] = useState("Acender");
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "500px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: aceso ? "#ffee00" : "#000",
-      }}
-    >
-      <button onClick={() => {
-        aceso ? setAceso(false) : setAceso(true)
-      }}>Mudar</button>
+    <div id="container">
+      <Lampada luz={aceso} />
+
+      <button
+        onClick={() => {
+          if (aceso == "0px 0px 50px yellow") {
+            setAceso("0px 0px 0px yellow");
+            setNameButton("Acender");
+          } else {
+            setAceso("0px 0px 50px yellow");
+            setNameButton("Apagar");
+          }
+        }}
+      >
+        {nameButton}
+      </button>
     </div>
   );
 }
