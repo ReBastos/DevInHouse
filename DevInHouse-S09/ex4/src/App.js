@@ -8,6 +8,7 @@ function App() {
 
   const valorAceso = "0px 0px 70px yellow, inset 0 0 50px orange";
   const valorApagado = "0px 0px 0px yellow";
+  
   return (
     <div id="container">
       <Lampada luz={aceso} />
