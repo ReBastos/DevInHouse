@@ -2,37 +2,31 @@ import PropType from "prop-types";
 import "./styles.css";
 
 function Personagem({
-  nome,
-  nascimento,
-  genero,
-  peso,
-  altura,
-  corOlhos,
-  corCabelo
+  dados
 }) {
   return (
     <div className="content">
       <div className="card">
-        <h2>{nome}</h2>
+        <h2>{dados.name}</h2>
         <hr />
         <div className="person-data">
           <p>
-            Ano de nascimento: <span>{nascimento}</span>
+            Ano de nascimento: <span>{dados.birth_year}</span>
           </p>
           <p>
-            Sexo: <span>{genero}</span>
+            Sexo: <span>{dados.gender}</span>
           </p>
           <p>
-            Peso (kg): <span>{peso}</span>
+            Peso (kg): <span>{dados.mass}</span>
           </p>
           <p>
-            Altura (cm): <span>{altura}</span>
+            Altura (cm): <span>{dados.height}</span>
           </p>
           <p>
-            Cor dos olhos: <span>{corOlhos}</span>
+            Cor dos olhos: <span>{dados.eye_color}</span>
           </p>
           <p>
-            Cor do cabelo: <span>{corCabelo}</span>
+            Cor do cabelo: <span>{dados.hair_color}</span>
           </p>
         </div>
       </div>
