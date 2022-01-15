@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import Header from './components/Header';
 import Home from './pages/Home';
+import BookDetails from './pages/BookDetails';
 import Cart from './pages/Cart';
 
 
@@ -25,6 +26,7 @@ function App() {
     <Header/>
     <Routes>
       <Route path='/' element={<Home bookList={bookList}/>} />
+      <Route path='/details' element={<BookDetails />} />
     </Routes>
     </>
     

@@ -10,7 +10,7 @@ const BookCard = ({image, title, price}) => {
 
             <img src={image}></img>
             <h3>{title}</h3>
-            <p>{price}</p>
+            <p>R${price}</p>
             <button>Comprar</button>
             <button>Detalhes</button>
         </div>
