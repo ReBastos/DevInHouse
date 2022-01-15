@@ -1,21 +1,21 @@
-const BookCard = () => {
+import './index.css'
+
+const BookCard = ({image, title, price}) => {
+
+
     return (
 
         <>
-        <div>
+        <div className='bookCard'>
 
-            <img>
-            
-            </img>
-            <p>
-
-            </p>
-            <button>
-
-            </button>
+            <img src={image}></img>
+            <h3>{title}</h3>
+            <p>{price}</p>
+            <button>Comprar</button>
+            <button>Detalhes</button>
         </div>
         </>
     )
 }
 
-export default BookCard
+export default BookCard;

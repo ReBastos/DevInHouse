@@ -1,29 +1,30 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-
+import Header from './components/Header';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 
 
 function App() {
 
+  const [bookList, setbookList] = useState(null);
   
-  useEffect( async() => {
+  useEffect( async () => {
 
     const responseBooks = await fetch('http://localhost:3333/books');
     const books = await responseBooks.json();
+    setbookList(books);
+    console.log(books)
 
-    console.log(books);
   } ,[]);
 
   return (
     <>
-    <h1>Teste</h1>
+    <Header/>
     <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/cart' element={<Cart/>} />
+      <Route path='/' element={<Home bookList={bookList}/>} />
     </Routes>
     </>
     
