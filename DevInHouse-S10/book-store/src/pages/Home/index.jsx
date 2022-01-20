@@ -2,8 +2,17 @@ import React from "react";
 import './index.css'
 import { Link } from 'react-router-dom';
 import BookCard from "../../components/BookCard";
+import { useContext } from "react";
+import { CartContext } from "../../context/Cart";
+import { CartProvider } from "../../context/Cart";
 
 const Home = ({bookList}) => {
+
+    const testeContext = useContext(CartContext);
+
+    console.log(testeContext);
+
+    const bookListfinal = bookList;
 
     if(bookList === null) {
 
@@ -13,12 +22,12 @@ const Home = ({bookList}) => {
 
         const returnBook = bookList.map((livro, i) => {
             return(
+                <>
             <BookCard
             key={i}
-            image={livro.image}
-            title={livro.title}
-            price={livro.price}
+            bookInfo={bookListfinal[i]}
             />
+            </>
             )
         })
 

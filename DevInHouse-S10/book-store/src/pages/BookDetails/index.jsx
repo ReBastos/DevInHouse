@@ -1,6 +1,10 @@
 import './index.css'
+import { useContext } from 'react';
+import { CartContext } from '../../context/Cart';
 
 const BookDetails = () => {
+
+
 
     return(
         <>

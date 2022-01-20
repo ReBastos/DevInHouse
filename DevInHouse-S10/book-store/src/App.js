@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { CartProvider } from './context/Cart';
 
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -23,11 +25,13 @@ function App() {
 
   return (
     <>
+    <CartProvider>
     <Header/>
     <Routes>
       <Route path='/' element={<Home bookList={bookList}/>} />
       <Route path='/details' element={<BookDetails />} />
     </Routes>
+    </CartProvider>
     </>
     
     
