@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import BookCard from "../../components/BookCard";
 import { useContext } from "react";
 import { CartContext } from "../../context/Cart";
-import { CartProvider } from "../../context/Cart";
 
 const Home = ({bookList}) => {
 

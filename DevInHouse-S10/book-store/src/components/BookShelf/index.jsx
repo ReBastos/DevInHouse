@@ -1,10 +1,11 @@
+import './index.css'
 
 const BookShelf = ({image, title, price}) => {
 
     return(
 
     <>
-    <div>
+    <div className='BookShelf'>
         <div>
             <img src={image}></img>
             <h3>{title}</h3>

@@ -30,6 +30,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home bookList={bookList}/>} />
       <Route path='/details' element={<BookDetails />} />
+      <Route path='/cart' element={<Cart/>} />
     </Routes>
     </CartProvider>
     </>
