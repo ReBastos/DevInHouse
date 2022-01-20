@@ -12,7 +12,7 @@ const BookShelf = ({image, title, price}) => {
         </div>
             
         <div>
-            <h3>{price}</h3>
+            <h3>R${price}</h3>
             <button>Remover</button>
         </div>
     </div>
