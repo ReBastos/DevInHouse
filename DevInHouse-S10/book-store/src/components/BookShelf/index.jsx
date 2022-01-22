@@ -1,19 +1,27 @@
 import './index.css'
+import { useContext } from "react";
+import { CartContext } from "../../context/Cart";
 
-const BookShelf = ({image, title, price}) => {
+const BookShelf = ({cartItem}) => {
+
+    const shelfContext = useContext(CartContext); 
+
+
 
     return(
 
     <>
     <div className='BookShelf'>
         <div>
-            <img src={image}></img>
-            <h3>{title}</h3>
+            <img src={cartItem.image}></img>
+            <h3>{cartItem.title}</h3>
         </div>
             
         <div>
-            <h3>R${price}</h3>
-            <button>Remover</button>
+            <h3>R${cartItem.price}</h3>
+            <button onClick={() => {
+                shelfContext.removeItem(cartItem.idCard);
+            }}>Remover</button>
         </div>
     </div>
     </>

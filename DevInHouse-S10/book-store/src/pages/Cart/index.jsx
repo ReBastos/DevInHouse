@@ -13,9 +13,7 @@ const Cart = () =>{
         return(
         <BookShelf
         key={i}
-        image={cartItems.image}
-        title={cartItems.title}
-        price={cartItems.price}
+        cartItem={cartItems}
         />
 
         )

@@ -15,11 +15,27 @@ export const CartProvider = ({children}) => {
         }
             setCart([...cart, newBook]);
     }
+
+    const handRemoveItem = (idBook) => {
+        const booksFiltered = cart.filter((book) => {
+
+            if (book.idCard === idBook) {
+                return false
+            } else {
+                return true
+            }
+    
+        })
+
+        setCart(booksFiltered);
+
+    }
     
     return (
         <CartContext.Provider value={{
             cart: cart,
-            addItem: handleAddCart
+            addItem: handleAddCart,
+            removeItem: handRemoveItem
             }}>
             {children}
         </CartContext.Provider>
