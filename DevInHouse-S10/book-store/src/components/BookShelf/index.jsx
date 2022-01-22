@@ -18,7 +18,7 @@ const BookShelf = ({cartItem}) => {
         </div>
             
         <div>
-            <h3>R${cartItem.price}</h3>
+            <h3>R${(cartItem.price).toFixed(2)}</h3>
             <button onClick={() => {
                 shelfContext.removeItem(cartItem.idCard);
             }}>Remover</button>
