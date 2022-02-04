@@ -5,11 +5,30 @@ import { CartContext } from "../../context/Cart";
 const Cart = () =>{
 
     const cartShelf = useContext(CartContext);
+    console.log(cartShelf.cart);
 
 
-    if (cartShelf != null) {
+    if (cartShelf.cart.length == 0) {
+
+
+        return(
+            <>
+            <h3>Total: R$0,00</h3>
+            </>
+        )
+
+
+    
+    } else {
+
+
+        const sumTotalCart = cartShelf.cart.map((value) => {
+            return value.price;
+        })
+
 
         const returnShelf = cartShelf.cart.map((cartItems, i) => {
+        
         return(
         <BookShelf
         key={i}
@@ -20,22 +39,19 @@ const Cart = () =>{
 
     })
 
-    return(
-        <div>{returnShelf}</div>
-    )
-    } else {
-        return(null)
-    }
+
     return(
         <>
-        <BookShelf
-        image={'https://cdn.shopify.com/s/files/1/0155/7645/products/OretornodocangaceiroJavaScript_ebook_large.jpg?v=1631654115'}
-        title={'JavaScript'}
-        price={'R$40,00'}
-        />
-        
+        <h3>Total: R${(sumTotalCart.reduce((a, b) => a+b).toFixed(2))}</h3>
+        <div>{returnShelf}</div>
         </>
     )
+
+    console.log('teste')
+
+
+    }  
+    
 }
 
 export default Cart;

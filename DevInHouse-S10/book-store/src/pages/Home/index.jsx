@@ -7,9 +7,6 @@ import { CartContext } from "../../context/Cart";
 
 const Home = ({bookList}) => {
 
-    const testeContext = useContext(CartContext);
-
-    console.log(testeContext);
 
     const bookListfinal = bookList;
 

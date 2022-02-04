@@ -19,7 +19,6 @@ function App() {
     const responseBooks = await fetch('http://localhost:3333/books');
     const books = await responseBooks.json();
     setbookList(books);
-    console.log(books)
 
   } ,[]);
 

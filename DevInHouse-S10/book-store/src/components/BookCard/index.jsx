@@ -13,7 +13,7 @@ const BookCard = ({bookInfo}) => {
         <div className='bookCard'>
             <img src={bookInfo.image}></img>
             <h3>{bookInfo.title}</h3>
-            <p>R${bookInfo.price}</p>
+            <p>R${(bookInfo.price).toFixed(2)}</p>
             <button onClick={() => {
                 contextoteste.addItem(bookInfo)
             }}>Comprar</button>
