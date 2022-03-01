@@ -22,14 +22,26 @@ public class Menu
 		_ingridients.Add(value);
     }
 
+	public void showIngridients()
+    {
+		Console.WriteLine("Ingredientes:");
+		foreach(String ingridient in _ingridients)
+        {
+			Console.WriteLine($"-{ingridient}");
+        }
+    }
+
 	public double Price
     {
 		get { return _price; }
 		set { _price = value; }
     }
 
-	public string Informations()
+	public void Informations()
 	{
-		return $"Nome do Prato: {_plate}; Ingredientes: {_ingridients}; Preço:R${_price}";
+		Console.WriteLine($"Nome do Prato: {_plate}");
+		Console.WriteLine($"Preço: R${_price.ToString("F")}");
+		showIngridients();
+		
 	}
 }
