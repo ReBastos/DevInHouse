@@ -1,8 +1,21 @@
-﻿using System;
+﻿using S05_Exercício.Entidades;
+using System;
 
 public class CartaoCredito : Cartao
 {
-	public double Limit { get; }
+	public double Limit { get; set; }
+	public List<TransacaoCredito> ListaTransacoesCredito;
+
+
+	public void AdicionarTransacaoCredito(TransacaoCredito transacao)
+    {
+		if(ListaTransacoesCredito == null)
+        {
+			ListaTransacoesCredito = new List<TransacaoCredito>();
+        }
+
+		ListaTransacoesCredito.Add(transacao);
+    }
 
 
 	public CartaoCredito(string Name,
@@ -16,6 +29,15 @@ public class CartaoCredito : Cartao
 		this.Limit = Limit;
 
     }
+
+	public override double CalcularSaldo(DateOnly date)
+    {
+
+		return ListaTransacoesCredito.Where(trans => trans.Data <= date)
+												.Sum(trans => trans.Value);
+
+		
+	}
 
 	public double ReturnLimit()
     {

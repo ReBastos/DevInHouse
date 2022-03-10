@@ -33,6 +33,8 @@ public abstract class Cartao
 		
     }
 
+	public abstract double CalcularSaldo(DateOnly Date);
+
 	public DateOnly ReturnExpireDate()
     {
 		return ExpireDate;
