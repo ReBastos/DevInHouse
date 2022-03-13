@@ -1,0 +1,15 @@
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\bin\Debug\net6.0\Ex7-10.exe
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\bin\Debug\net6.0\Ex7-10.deps.json
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\bin\Debug\net6.0\Ex7-10.runtimeconfig.json
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\bin\Debug\net6.0\Ex7-10.dll
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\bin\Debug\net6.0\Ex7-10.pdb
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.csproj.AssemblyReference.cache
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.AssemblyInfoInputs.cache
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.AssemblyInfo.cs
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.csproj.CoreCompileInputs.cache
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.dll
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\refint\Ex7-10.dll
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.pdb
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\Ex7-10.genruntimeconfig.cache
+C:\Users\renat\Desktop\DevInHouse\DevInHouse\Módulo 2 - Back-End\DevInHouse - S05\Ex7-10\obj\Debug\net6.0\ref\Ex7-10.dll
