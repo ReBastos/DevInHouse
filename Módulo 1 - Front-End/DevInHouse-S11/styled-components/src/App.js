@@ -1,4 +1,7 @@
 import StyledInput from './Components/Input/Input';
+import StyledSelect from './Components/StyledSelect';
+import StyledTextArea from './Components/StyledTextArea';
+import StyledRadio from './Components/RadioInput';
 import './App.css';
 
 function App() {
@@ -6,8 +9,23 @@ function App() {
     <>
     <StyledInput
     labelValue={"Label Value"}
-    type={"text"}
     />
+
+    <StyledSelect
+    labelValue={"Select Value"}
+    
+    />
+
+    <StyledTextArea
+    labelValue={"TextArea Value"}
+    />
+
+    <StyledRadio
+    labelValue={"Radio"}
+    />
+
+
+
     </>
   );
 }
